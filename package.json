@@ -19,7 +19,8 @@
     "dev": "nodemon ./web/server.js",
     "client:install": "cd client && yarn && cd ..",
     "client:build": "cd client && yarn build && cd ..",
-    "prepare": "(cd api && yarn && cd ..) && (cd web && yarn && cd ..)",
-    "heroku-postbuild": "yarn prepare && yarn client:install && yarn client:build"
+    "api:install": "cd api && yarn && cd ..",
+    "web:install": "cd web && yarn && cd ..",
+    "heroku-postbuild": "yarn api:install && yarn web:install && yarn client:install && yarn client:build"
   }
 }
