@@ -25,5 +25,6 @@ app.use(logger('common'));
 app.use('/', api);
 app.use(microcache.cacheSeconds(5, request => request.originalUrl));
 app.use(serve());
+app.use('*', serve('index.html'));
 
 module.exports = app;
