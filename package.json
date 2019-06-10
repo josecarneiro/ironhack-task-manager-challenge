@@ -1,0 +1,25 @@
+{
+  "name": "task-manager",
+  "description": "Task management web app. Built as a challenge for Ironhack.",
+  "author": {
+    "name": "José Carneiro",
+    "email": "contact@josecarnei.ro",
+    "url": "https://josecarnei.ro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josecarneiro/ironhack-task-manager-challenge.git"
+  },
+  "engines": {
+    "node": "^=10.13.0",
+    "yarn": ">=1.3.0"
+  },
+  "scripts": {
+    "start": "node ./web/server.js",
+    "dev": "nodemon ./web/server.js",
+    "client:install": "cd client && yarn && cd ..",
+    "client:build": "cd client && yarn build && cd ..",
+    "prepare": "(cd api && yarn && cd ..) && (cd web && yarn && cd ..)",
+    "heroku-postbuild": "yarn prepare && yarn client:install && yarn client:build"
+  }
+}

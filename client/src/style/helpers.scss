@@ -1,0 +1,73 @@
+$grey-hue: 210;
+
+@function grey ($luminosity: 0.5, $opacity: 1, $saturation: 0.17) {
+  $saturation: 0.17;
+  @return hsla($grey-hue, $saturation * 100%, $luminosity * 100%, $opacity);
+}
+
+@mixin uppercase () {
+  text-transform: uppercase;
+  font-size: 12 / 16 * 1em;
+  letter-spacing: 1 / 16 * 1em;
+}
+
+@mixin placeholder ($color: null) {
+  ::-webkit-input-placeholder {
+    @if $color {
+      color: $color;
+    }
+    @content;
+  }
+  :-moz-placeholder {
+    @if $color {
+      color: $color;
+    }
+    opacity: 1;
+    @content;
+  }
+  ::-moz-placeholder {
+    @if $color {
+      color: $color;
+    }
+    opacity: 1;
+    @content;
+  }
+  :-ms-input-placeholder {
+    @if $color {
+      color: $color;
+    }
+    @content;
+  }
+  ::-ms-input-placeholder {
+    @if $color {
+      color: $color;
+    }
+    @content;
+  }
+  ::placeholder {
+    @if $color {
+      color: $color;
+    }
+    @content;
+  }
+  &::placeholder { 
+    @if $color {
+      color: $color;
+    }
+    @content;
+  }
+}
+
+@mixin autofill-background ($color: white) {
+  &:-webkit-autofill {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 10em $color inset;
+      @content;
+    }
+  }
+}
+
+$button-border-color: grey(0.5, 0.1);

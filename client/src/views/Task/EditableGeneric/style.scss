@@ -1,0 +1,11 @@
+.view--task--editable {
+  .container,
+  .task__input {
+    // height: 100%;
+    flex: 1;
+    justify-content: stretch;
+  }
+  .task__input__description {
+    flex: 1;
+  }
+}

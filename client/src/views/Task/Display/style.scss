@@ -1,0 +1,40 @@
+.task__details {
+  display: flex;
+  & > div {
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+}
+
+.task__title {
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+.view--task--display {
+  padding-top: 5em;
+  justify-content: center;
+  .container {
+    & > div {
+      &:not(:last-child) {
+        margin-bottom: 0.25em;
+      }
+    }
+  }
+  .btn__group {
+    justify-content: flex-end;
+    margin-right: -1em;
+  }
+}
+
+
+.detail__iconed {
+  display: inline-flex;
+  align-items: center;
+  .icon {
+    margin-right: 0.125em;
+  }
+}

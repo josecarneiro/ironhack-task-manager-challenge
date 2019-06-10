@@ -1,0 +1,45 @@
+@import 'reset';
+@import 'helpers';
+
+@import "~@material/react-material-icon/dist/material-icon.css";
+$font-basic: 'Helvetica Neue', Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+$font-body: 'Open Sans', $font-basic;
+
+body {
+  font-family: $font-body;
+  line-height: 2;
+  color: grey(0.1, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+small {
+  font-size: 0.75em;
+}
+
+input,
+textarea {
+  @include placeholder(grey(0.75));
+  @include autofill-background;
+}
+
+textarea {
+  min-height: 1em * 2 + 3 * 2em;
+}
+
+.btn__group {
+  display: flex;
+}

@@ -1,0 +1,31 @@
+@import "~style/helpers";
+
+.task__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.task__item__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-height: 3.5em;
+  // padding: 1em;
+  padding: 0 1em;
+  // padding: 0.5em 1em;
+  line-height: 1;
+  span {
+    margin-bottom: 0.5em;
+  }
+  small {
+    color: grey(0.25, 0.5);
+  }
+}
+
+.task__item__actions {
+  display: flex;
+  flex: 0;
+}

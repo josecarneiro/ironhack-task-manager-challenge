@@ -1,0 +1,23 @@
+@import '~style/helpers';
+
+.view--task--list {
+  display: flex;
+  flex-direction: column;
+  .container,
+  .task__list {
+    flex: 1;
+  }
+  & > .btn {
+    margin-top: auto;
+    justify-content: center;
+    border-top: 1px solid $button-border-color;
+    // background-color: grey(0.95);
+  }
+}
+
+.task__list__placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}

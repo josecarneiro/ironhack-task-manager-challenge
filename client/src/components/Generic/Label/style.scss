@@ -1,0 +1,8 @@
+@import "~style/helpers";
+
+.generic-label {
+  display: flex;
+  @include uppercase;
+  // color: grey(0.25);
+  color: grey(0.45);
+}

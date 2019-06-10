@@ -1,0 +1,19 @@
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  .icon {
+    &:not(:last-child) {
+      margin-right: 0.5em;
+    }
+  }
+  &.btn--inverted {
+    flex-direction: row-reverse;
+    .icon {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-left: 0.5em;
+      }
+    }
+  }
+}

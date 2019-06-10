@@ -1,0 +1,23 @@
+.task__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  textarea,
+  input {
+    min-width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0 -1rem;
+  }
+  .btn {
+    align-self: flex-end;
+  }
+  .btn__group {
+    display: flex;
+    align-self: flex-end;
+    margin-right: -1em;
+  }
+}
+
+.task__input__title {
+  font-size: 2em;
+}

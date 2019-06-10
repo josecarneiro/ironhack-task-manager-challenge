@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js",
+    "inspect": "node --inspect ./server.js",
+    "dev": "nodemon ./server.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "route-cache": "^0.4.4",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0",
+    "serve-favicon-safe": "^0.1.0"
+  }
+}
